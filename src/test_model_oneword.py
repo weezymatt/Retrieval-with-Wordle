@@ -377,6 +377,6 @@ if __name__ == "__main__":
     else:
         raise ValueError(f"'{start_word}' is not in the word list.")
     agent = DQNAgent(env.state.flatten().shape[0], len(env.all_words), env, start_word_index, char_to_index, model)
-    output_file_path = "evaluation_results_single_word_craft_slate.txt"
+    output_file_path = "evaluation_results_single_word.txt"
     agent.epsilon = 0.01  # Set low exploration rate for deterministic behavior
     evaluate_agent(env, agent, output_file_path, specific_word, start_word)

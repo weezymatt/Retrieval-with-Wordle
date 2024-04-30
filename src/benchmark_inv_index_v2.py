@@ -117,8 +117,8 @@ class BenchmarkInvIndex:
 def main():
     guess = input("Provide your guess: ")
     b = BenchmarkInvIndex(guess.lower())
-    # b.benchmark_alphabet()
-    b.benchmark_words_starting_with('i')
+    # b.benchmark_alphabet() # Returns text file of the benchmark results
+    b.benchmark_words_starting_with('c')
 
 if __name__ == '__main__':
     main()
