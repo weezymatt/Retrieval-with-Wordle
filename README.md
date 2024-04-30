@@ -62,7 +62,7 @@ The default code in ```benchmark_inv_index_v2.py``` is written such that it will
   def main():
     guess = input("Provide your guess: ")
     b = BenchmarkInvIndex(guess.lower())
-    # b.benchmark_alphabet()
+    # b.benchmark_alphabet() # Returns text file of the benchmark results
     b.benchmark_words_starting_with('<LETTER>')
   ```
 2. Run the benchmark by providing a guess to initialize the intersection.
