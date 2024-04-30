@@ -17,7 +17,7 @@ This project was created for the purpose of applying techniques in Information R
 In this repository we describe our end-to-end-implementation of the popular Wordle game, using various Information Retrieval (IR) techniques, together with Reinforcement Learning and large language models. The goal of the game is to guess the word-of-the-day under six attempts with the help of feedback in the form of colored tiles. The system operates on algorithms that index five-letter words and perform a boolean search over them. We present analysis over two popular starting words, and make use of an inverted-index to reduce the search after each guess.
 
 ## Instructions
-> The code is intended to be run in the terminal. There are two main files to run: ```benchmark_inv_index_v2.py``` and ```prompt.py```. You will need a list of previous solutions to Wordle to use the prompt file. This can be found [here](https://wordfinder.yourdictionary.com/wordle/answers/).
+> The code is intended to be run in the terminal. There are three main files to run: ```benchmark_inv_index_v2.py```, ```test_model_oneword.py```and ```prompt.py```. You will need a list of previous solutions to Wordle to use the prompt file. This can be found [here](https://wordfinder.yourdictionary.com/wordle/answers/).
 
 In order to reproduce the results from the paper please follow these steps: 
 
@@ -29,7 +29,11 @@ git clone git@github.com:weezymatt/Retrieval-with-Wordle.git
   ```bash
   cd src/
   ```
-3. Running the ```prompt.py``` file requires you to have an OpenAI account to be able to programatically run prompts with an API key as an environment variable. Skip if you are not interested. Unfortunately, you must fund your account ($5.00 minimum) even though you can run some free API calls. Sorry.
+3. **Choose which implementation you would like to test:**
+   - Default System ```benchmark_inv_index_v2.py```
+   - Reinforcement Learning model ```test_model_oneword.py```
+   - ChatGPT Assist ```prompt.py```
+4. Running the ```prompt.py``` file requires an OpenAI account to be able to programatically run prompts with an API key as an environment variable. Unfortunately, you must fund your account ($5.00 minimum) even though you can run some free API calls. Sorry! Skip if you are not interested. 
 - Create an environment variable.
   ```bash
   nano .env
@@ -46,8 +50,8 @@ git clone git@github.com:weezymatt/Retrieval-with-Wordle.git
 
   > Considering this information, a good starting word could be "charm" **[charm]**. This word has a nice balance of vowels and consonants, and the starting letter   > is different from the previous solutions. The variety in letters can help cover a wider range of possible words in the Wordle game.
 
-4. The default code in ```benchmark_inv_index_v2.py``` is written such that it will be run against all the letters for the selected character. Run the benchmark file to test the main system. 
-- Choose the starting letter for the word-of-the-day or a word that you want to test.
+4. The default code in ```benchmark_inv_index_v2.py``` is written such that it will run against **all** words for the selected character and print the number of guess in the terminal. We recommend simply running the code against a random letter to see the code in action. 
+- Choose the starting letter for the word-of-the-day or a word that you want to test in the Python file.
   ```python
   def main():
     guess = input("Provide your guess: ")
@@ -61,6 +65,17 @@ git clone git@github.com:weezymatt/Retrieval-with-Wordle.git
   python3 benchmark_inv_index_v2.py
   Provide your guess: <INSERT-YOUR-WORD>
   ```
-5. A text file of statistics is printed in this directory and you can see how your guess faired against the word of the day. 
-
+- If you are interested in the benchmark of your alphabet you may run uncomment the code in the same file.
+  ```python
+  def main():
+    guess = input("Provide your guess: ")
+    b = BenchmarkInvIndex(guess.lower())
+    b.benchmark_alphabet() # Returns benchmark results in a text file
+    # b.benchmark_words_starting_with('c')
+  ```
+5. We recommend running ```test_model_oneword.py``` for the Reinforcement Learning system.
+   ```bash
+   python3 test_model_oneword.py
+   ```
+   
 ## see more?
