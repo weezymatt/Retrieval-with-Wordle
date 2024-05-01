@@ -2,7 +2,7 @@
 Contributors: Martinus Kleiweg, Shawn Kim, and Matthew Hernandez
 > **Note** Access to our paper [here](dont-forget-this)
 
-Last updated April 30th, 2024.
+Last updated May 1st, 2024.
 
 > **Note** The scope of this project involves the following points: indexing and retrieval, measuring performance, error analysis, and a proposed improved implementation.
 
