@@ -3,7 +3,7 @@ Setting word of the day: PRUNE
 Number of words {P}:	 1130
 
 
-Naive Implementation:
+Naive System:
 {Adieu}			Valid guesses left: 417
 			Valid guesses left: 220
 			Valid guesses left: 56
@@ -20,7 +20,7 @@ Naive Implementation:
 			Valid guesses left: 30
 			Word 'prune' solved in 6 tries
 
-Zipfian-IDF Implementation:
+Default System:
 {Adieu}			Valid guesses left: 417
 			Valid guesses left: 17
 			Valid guesses left: 8
@@ -35,7 +35,7 @@ Zipfian-IDF Implementation:
 			Word solved!
 			Word 'prune' solved in 4 tries
 
-Zipfian-IDF w/ ChatGPT Prompt:
+Default System w/ ChatGPT Prompt:
 {Gusty}			Valid guesses left: 1237
 			Valid guesses left: 605
 			Valid guesses left: 61
@@ -43,3 +43,24 @@ Zipfian-IDF w/ ChatGPT Prompt:
 			Valid guesses left: 10
 			Valid guesses left: 4
 			Word 'prune' solved in 6 tries
+
+Reinforcement Learning System:
+{adieu}			Valid guesses left: 14855
+			Valid guesses left: 266
+Guess='begun'		Valid guesses left: 17
+Guess='noule'		Valid guesses left: 2
+Guess='enure'		Valid guesses left: 1
+Guess='prune'		Valid guesses left: 0
+			Word solved!
+			Word 'prune' solved in 5 tries
+
+
+
+{slate}			Valid guesses left: 14855
+			Valid guesses left: 506
+Guess='bedye'		Valid guesses left: 255
+Guess='chine'		Valid guesses left: 9
+Guess='krone'		Valid guesses left: 1
+Guess='prune'		Valid guesses left: 0
+			Word solved!
+			Word 'prune' solved in 5 tries
