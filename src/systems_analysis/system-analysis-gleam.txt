@@ -3,7 +3,7 @@ Setting word of the day: GLEAM
 Number of words {G}:	 685
 
 
-Naive Implementation:
+Naive System:
 {Adieu}			Valid guesses left: 1026
 			Valid guesses left: 465
 			Valid guesses left: 69
@@ -20,7 +20,7 @@ Naive Implementation:
 			Word solved!
 			Word 'gleam' solved in 6 tries
 
-Zipfian-IDF Implementation:
+Default System:
 {Adieu}			Valid guesses left: 1026
 			Valid guesses left: 20
 			Valid guesses left: 12
@@ -36,10 +36,29 @@ Zipfian-IDF Implementation:
 			Word 'gleam' solved in 5 tries
 
 
-Zipfian-IDF w/ ChatGPT Prompt:
+Default System w/ ChatGPT Prompt:
 {Table}			Valid guesses left: 160
 			Valid guesses left: 16
 			Valid guesses left: 10
 			Valid guesses left: 8
 			Word solved!
 			Word 'gleam' solved in 5 tries
+
+Reinforcement Learning System:
+{adieu}			Valid guesses left: 14855
+			Valid guesses left: 775
+Guess='barbe'		Valid guesses left: 292
+Guess='beaky'		Valid guesses left: 55
+Guess='chela'		Valid guesses left: 10
+Guess='gleam'		Valid guesses left: 9
+			Word solved!
+			Word 'gleam' solved in 5 tries
+
+
+{slate}			Valid guesses left: 14855
+			Valid guesses left: 30
+Guess='aldea'		Valid guesses left: 14
+Guess='blear'		Valid guesses left: 6
+Guess='gleam'		Valid guesses left: 5
+			Word solved!
+			Word 'gleam' solved in 4 tries

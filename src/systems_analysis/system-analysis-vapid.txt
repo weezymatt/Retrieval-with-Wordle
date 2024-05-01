@@ -2,7 +2,7 @@ WOTD: April 26, 2024
 Setting word of the day: VAPID
 Number of words {V}:	 284
 
-Naive Implementation:
+Naive System:
 {Adieu}				Valid guesses left: 105
 				Valid guesses left: 16
 				Valid guesses left: 12
@@ -19,7 +19,7 @@ Naive Implementation:
 				Valid guesses left: 6
 				Max tries reached for guess: PAVID. Moving to next word.
 
-Zipfian-IDF Implementation:
+Default System:
 {Adieu}				Valid guesses left: 105
 				Valid guesses left: 17
 				Valid guesses left: 1
@@ -32,10 +32,31 @@ Zipfian-IDF Implementation:
 				Word solved!
 				Word 'vapid' solved in 4 tries
 
-Zipfian-IDF w/ ChatGPT Prompt:
+Default System w/ ChatGPT Prompt:
 {Novel}				Valid guesses left: 371
 				Valid guesses left: 36
 				Valid guesses left: 15
 				Valid guesses left: 1
 				Word solved!
 				Word 'vapid' solved in 5 tries
+
+Reinforcement Learning System:
+
+{adieu} 		Vapid guesses left: 14855
+Guess='adieu'		Vapid guesses left: 96
+Guess='cadis'		Valid guesses left: 13
+Guess='davit'		Valid guesses left: 2
+Guess='valid'		Valid guesses left: 1
+Guess='vapid'		Valid guesses left: 0
+			Word solved!
+			Word 'vapid' solved in 5 tries
+
+{slate}			Valid guesses left: 14855
+			Valid guesses left: 1101
+Guess='abjad'		Valid guesses left: 31
+Guess='cycad'		Valid guesses left: 15
+Guess='faurd'		Valid guesses left: 6
+Guess='madid'		Valid guesses left: 3
+Guess='vapid'		Valid guesses left: 2
+			Word solved!
+			Word 'vapid' solved in 6 tries
