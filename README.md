@@ -1,6 +1,6 @@
 # Retrieval-with-Wordle
 Contributors: Martinus Kleiweg, Shawn Kim, and Matthew Hernandez
-> **Note** Access to our paper [here](dont-forget-this)
+> **Note** Access to our paper [here](https://github.com/weezymatt/Retrieval-with-Wordle/blob/main/Retrieval-with-Wordle.pdf)
 
 Last updated May 1st, 2024.
 
